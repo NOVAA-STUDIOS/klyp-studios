@@ -30,6 +30,14 @@ Run validation with `pnpm lint`, `pnpm typecheck`, `pnpm format:check`, and `pnp
 
 Use the `@/*` alias for imports from `src`. Keep secrets out of source control; use `.env.example` to document public configuration names and required local variables.
 
+## Portfolio updates
+
+Portfolio entries live in `src/config/portfolio.ts`. Add an item only after its public
+use is approved. Required fields are `id`, `title`, `category`, `format`, `role`,
+`featured`, `status`, and `shortDescription`; add creator names, media URLs, and links
+only when cleared. Place local thumbnails in `public/portfolio/` and reference them as
+`/portfolio/file-name.jpg`. Do not publish unapproved work, names, thumbnails, or video links.
+
 ## Visual system
 
 - Semantic color and fluid type tokens live in `src/app/globals.css`.

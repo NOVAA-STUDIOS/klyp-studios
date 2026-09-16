@@ -7,8 +7,9 @@ import { Button } from "@/components/ui/button";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { TextLink } from "@/components/ui/text-link";
 import { publicActions } from "@/config/navigation";
+import { homepagePortfolioItems } from "@/config/portfolio";
 
-import { editorJourney, portfolioSlots } from "./content";
+import { editorJourney } from "./content";
 import styles from "./home-page.module.css";
 
 export function HomePage() {
@@ -174,31 +175,36 @@ export function HomePage() {
               in the frame.
             </h2>
             <p>
-              Portfolio media will live here once projects and public permissions are
-              confirmed.
+              Selected work is added here only after project details and public media
+              are confirmed.
             </p>
-            <TextLink href="/work">View work structure</TextLink>
+            <TextLink href="/work">View selected work</TextLink>
           </div>
           <div className={styles.portfolioGrid}>
-            {portfolioSlots.map((slot, index) => (
-              <MediaFrame
-                className={`${styles.portfolioFrame} ${styles[slot.ratio]}`}
-                ratio={
-                  slot.ratio === "portrait"
-                    ? "portrait"
-                    : slot.ratio === "wide"
-                      ? "cinematic"
-                      : "landscape"
-                }
-                key={`${slot.label}-${slot.format}`}
-              >
-                <span className={styles.slotNumber}>0{index + 1}</span>
-                <span className={styles.slotStatus}>Coming soon</span>
-                <div className={styles.slotLabel}>
-                  <p>{slot.label}</p>
-                  <span>{slot.format}</span>
-                </div>
-              </MediaFrame>
+            {homepagePortfolioItems.map((item, index) => (
+              <article className={styles.previewCard} key={item.id}>
+                <a
+                  aria-label={`Open video: ${item.title}`}
+                  className={styles.previewLink}
+                  href={item.videoUrl}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <MediaFrame
+                    className={styles.portfolioFrame}
+                    ratio="cinematic"
+                    thumbnailAlt={item.title}
+                    thumbnailSrc={item.thumbnailSrc}
+                  >
+                    <span className={styles.slotNumber}>0{index + 1}</span>
+                  </MediaFrame>
+                  <div className={styles.previewInfo}>
+                    <span>{item.creatorName}</span>
+                    <h3>{item.title}</h3>
+                    <span>Watch video ↗</span>
+                  </div>
+                </a>
+              </article>
             ))}
           </div>
         </Container>
