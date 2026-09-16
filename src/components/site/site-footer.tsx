@@ -25,8 +25,12 @@ export function SiteFooter() {
         </nav>
         <nav aria-label="Footer actions">
           <p>Start here</p>
-          <Link href={publicActions.creator.href}>{publicActions.creator.label}</Link>
-          <Link href={publicActions.editor.href}>{publicActions.editor.label}</Link>
+          <Link className={styles.actionLink} href={publicActions.creator.href}>
+            {publicActions.creator.label}
+          </Link>
+          <Link className={styles.actionLink} href={publicActions.editor.href}>
+            {publicActions.editor.label}
+          </Link>
           <span>Online enquiries and applications are opening soon.</span>
         </nav>
       </div>
