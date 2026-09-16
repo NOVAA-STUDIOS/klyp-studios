@@ -1,0 +1,18 @@
+.link {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--color-fg);
+  font-size: 0.875rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+.link::after {
+  color: var(--color-red);
+  content: "→";
+  transition: transform var(--transition-fast);
+}
+.link:hover::after {
+  transform: translateX(0.2rem);
+}
