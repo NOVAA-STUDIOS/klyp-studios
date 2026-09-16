@@ -92,10 +92,10 @@ export default function WorkPage() {
                 <span className={styles.frameIndex}>
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <span className={styles.frameStatus}>Future approved work slot</span>
+                <span className={styles.frameStatus}>Coming soon</span>
                 <div className={styles.frameFooter}>
                   <p>{slot}</p>
-                  <span>Media pending</span>
+                  <span>Coming soon</span>
                 </div>
               </MediaFrame>
             ))}

@@ -1,9 +1,17 @@
 .footer {
   position: relative;
   padding: 5rem var(--gutter) 1.5rem;
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid rgb(255 255 255 / 5%);
   background:
-    linear-gradient(180deg, rgb(255 255 255 / 1.5%), transparent 35%), #07090d;
+    linear-gradient(180deg, var(--color-bg) 0, rgb(11 14 19 / 96%) 5rem, #07090d 40%),
+    #07090d;
+}
+.footer::before {
+  position: absolute;
+  inset: 0 8% auto;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgb(255 255 255 / 10%), transparent);
+  content: "";
 }
 .top,
 .bottom {
@@ -49,10 +57,13 @@
   color: var(--color-fg-secondary);
   font-size: 0.83rem;
   text-decoration: none;
-  transition: color var(--transition-fast);
+  transition:
+    color var(--transition-fast),
+    transform var(--transition-fast);
 }
 .top nav a:hover {
   color: var(--color-fg);
+  transform: translateX(2px);
 }
 .bottom {
   margin-top: 4rem;
@@ -77,5 +88,6 @@
   }
   .bottom {
     flex-direction: column;
+    gap: 0.35rem;
   }
 }

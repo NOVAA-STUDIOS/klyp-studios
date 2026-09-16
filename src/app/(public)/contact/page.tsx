@@ -16,7 +16,7 @@ import { contactInquiryTypes, contentTypes } from "@/features/public-pages/form-
 
 export const metadata: Metadata = {
   title: "Start a Project",
-  description: "Creator project and general enquiry foundation for KLYP STUDIOS.",
+  description: "Creator project and general enquiries for KLYP STUDIOS.",
 };
 export default function ContactPage() {
   return (
@@ -31,7 +31,7 @@ export default function ContactPage() {
             <em>the project.</em>
           </>
         }
-        description="Share what you are making, the kind of editing support you need, and where you are in the process. This page is a UI foundation; enquiries are not submitted yet."
+        description="Share what you are making, the kind of editing support you need, and where you are in the process. Online enquiries are opening soon."
       />
       <Section className={styles.warmBand}>
         <Container size="wide">
@@ -71,8 +71,8 @@ export default function ContactPage() {
         <Container size="wide">
           <FormFoundation
             title="Project enquiry"
-            note="The fields establish the intended future enquiry structure. The submission backend is not connected."
-            submitLabel="Submission unavailable"
+            note="These details will help KLYP understand your project when online enquiries open."
+            submitLabel="Enquiries opening soon"
           >
             <FormSection index="01" legend="About you">
               <TextField

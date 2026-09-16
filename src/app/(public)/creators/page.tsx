@@ -54,7 +54,7 @@ export default function CreatorsPage() {
           </div>
           <div className={styles.splitCards}>
             <article>
-              <span>Available foundation / 01</span>
+              <span>Studio route / 01</span>
               <h3>Let KLYP find the right editor or team.</h3>
               <p>
                 Share the direction, format, timing, and support you need. KLYP can use
@@ -63,7 +63,7 @@ export default function CreatorsPage() {
               <TextLink href="/contact?intent=creator">Start with a brief</TextLink>
             </article>
             <article>
-              <span>Future route / 02</span>
+              <span>Editor discovery / 02</span>
               <h3>Explore editors directly.</h3>
               <p>
                 A future discovery experience for reviewing available editorial talent
@@ -85,9 +85,8 @@ export default function CreatorsPage() {
               <em>Room for the craft.</em>
             </h2>
             <p>
-              Each engagement will be shaped around the project. This sequence
-              establishes the working foundation without promising a fixed service
-              model.
+              Each engagement will be shaped around the project. This sequence creates a
+              flexible starting point without promising a fixed service model.
             </p>
           </div>
           <ProcessSteps items={process} label="Creator project process" />

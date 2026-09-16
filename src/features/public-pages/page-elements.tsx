@@ -27,7 +27,7 @@ export function PageHero({
       <Container className={styles.heroInner} size="wide">
         <div className={styles.heroRail} aria-hidden="true">
           <span>{marker}</span>
-          <span>KLYP / PUBLIC</span>
+          <span>KLYP / STUDIO</span>
         </div>
         <Eyebrow className={styles.heroEyebrow}>{eyebrow}</Eyebrow>
         <h1>{title}</h1>
@@ -252,18 +252,18 @@ export function FormFoundation({
   return (
     <div className={styles.formShell}>
       <div className={styles.formHeading}>
-        <span>Form foundation / not connected</span>
+        <span>Online submissions</span>
         <h2>{title}</h2>
         <p id={noteId}>{note}</p>
       </div>
       <form aria-describedby={noteId} data-status="inactive">
         <div className={styles.formNotice} role="note">
           <span aria-hidden="true" />
-          Form submission will be connected in a later phase.
+          Online submissions are opening soon.
         </div>
         {children}
         <div className={styles.formEnd}>
-          <p>No information is submitted or stored in this phase.</p>
+          <p>Nothing entered here is submitted or stored.</p>
           <button type="button" disabled>
             {submitLabel}
             <span aria-hidden="true">↗</span>

@@ -41,7 +41,7 @@ export function HomePage() {
           <MediaFrame className={styles.heroFrame} ratio="cinematic">
             <div className={styles.heroFrameLight} aria-hidden="true" />
             <p>
-              Showreel reserved
+              KLYP showreel
               <br />
               <span>Approved production media to follow</span>
             </p>
@@ -193,7 +193,7 @@ export function HomePage() {
                 key={`${slot.label}-${slot.format}`}
               >
                 <span className={styles.slotNumber}>0{index + 1}</span>
-                <span className={styles.slotStatus}>Media reserved</span>
+                <span className={styles.slotStatus}>Coming soon</span>
                 <div className={styles.slotLabel}>
                   <p>{slot.label}</p>
                   <span>{slot.format}</span>
@@ -217,10 +217,10 @@ export function HomePage() {
           </h2>
           <div>
             <p>
-              This space is reserved for the confirmed founder perspective and the
-              reason KLYP exists, once the final story and media are ready.
+              The founder perspective and the reason KLYP exists will be introduced here
+              when the story and media are ready.
             </p>
-            <span>Reserved content boundary / no placeholder claims</span>
+            <span>Founder story coming soon</span>
           </div>
         </Container>
       </Section>

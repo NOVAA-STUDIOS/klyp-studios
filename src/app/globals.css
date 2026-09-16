@@ -1,4 +1,4 @@
-@layer reset, tokens, base, motion, utilities;
+@layer reset, tokens, base, utilities;
 
 @layer tokens {
   :root {
@@ -33,7 +33,8 @@
     --font-body:
       -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Helvetica, Arial,
       sans-serif;
-    --font-editorial: var(--font-display);
+    --font-editorial:
+      "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
     --text-display-xl: clamp(3.75rem, 9vw, 9rem);
     --text-display: clamp(3rem, 6.5vw, 6.5rem);
     --text-heading: clamp(2.2rem, 4vw, 4.25rem);
@@ -145,25 +146,6 @@
   }
 }
 
-@layer motion {
-  html[data-motion="ready"] main > section:not([data-reveal-visible]) {
-    opacity: 0;
-    filter: blur(6px);
-    transform: translateY(1.5rem) scale(0.995);
-  }
-
-  html[data-motion="ready"] main > section {
-    transition:
-      opacity var(--transition-reveal),
-      filter var(--transition-reveal),
-      transform var(--transition-reveal);
-  }
-
-  html[data-motion="ready"] main > section :where(article, li) {
-    transition-delay: calc(var(--reveal-order, 0) * 42ms);
-  }
-}
-
 @layer utilities {
   .skip-link {
     position: fixed;
@@ -211,18 +193,16 @@
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
-
-  html[data-motion="ready"] main > section:not([data-reveal-visible]) {
-    opacity: 1;
-    filter: none;
-    transform: none;
-  }
 }
 
 @media (max-width: 30rem) {
   :root {
     --section-space: 4.75rem;
     --site-header-height: 4.5rem;
+  }
+
+  body {
+    font-size: 0.96875rem;
   }
 }
 

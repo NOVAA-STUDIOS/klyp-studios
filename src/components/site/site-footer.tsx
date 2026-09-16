@@ -27,12 +27,12 @@ export function SiteFooter() {
           <p>Start here</p>
           <Link href={publicActions.creator.href}>{publicActions.creator.label}</Link>
           <Link href={publicActions.editor.href}>{publicActions.editor.label}</Link>
-          <span>Contact and application submission is not connected yet.</span>
+          <span>Online enquiries and applications are opening soon.</span>
         </nav>
       </div>
       <div className={styles.bottom}>
         <p>© {new Date().getFullYear()} KLYP STUDIOS</p>
-        <p>Public foundation / Phase 08</p>
+        <p>Editing studio · Talent ecosystem</p>
       </div>
     </footer>
   );

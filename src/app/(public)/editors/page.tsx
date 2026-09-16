@@ -103,7 +103,7 @@ export default function EditorsPage() {
             <em>how you edit?</em>
           </>
         }
-        description="Review the application foundation and prepare accurate information about your experience and work."
+        description="Review the application requirements and prepare accurate information about your experience and work."
         href="/apply/editor"
         label="Apply as an editor"
       />

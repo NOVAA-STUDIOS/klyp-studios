@@ -86,22 +86,20 @@ export default function AboutPage() {
             ORIGIN
           </p>
           <div className={styles.founderMedia}>
-            <span>Future founder film / portrait</span>
-            <small>Confirmed media pending</small>
+            <span>Founder story</span>
+            <small>Portrait and film coming soon</small>
           </div>
           <h2>
             The origin deserves
             <br />
-            the right telling.
+            <em>the right telling.</em>
           </h2>
           <div className={styles.founderCopy}>
             <p>
-              The confirmed founder perspective, personal story, and media will be added
-              here when they are ready for public release.
+              The founder perspective, personal story, and media will be introduced here
+              when they are ready.
             </p>
-            <span>
-              No name, biography, timeline, or achievements have been assumed.
-            </span>
+            <span>Founder story and media coming soon.</span>
           </div>
         </Container>
       </Section>

@@ -21,7 +21,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Editor Application",
-  description: "The application foundation for the selective KLYP editor path.",
+  description: "The application path for the selective KLYP editor programme.",
 };
 const journey = [
   "Apply",
@@ -44,7 +44,7 @@ export default function EditorApplicationPage() {
             <em>Start the path.</em>
           </>
         }
-        description="This application foundation is for editors interested in KLYP's selective development path. The form is not accepting submissions yet."
+        description="This application is for editors interested in KLYP's selective development path. Online applications are opening soon."
       />
       <Section className={styles.darkBand}>
         <Container size="wide">
@@ -74,8 +74,8 @@ export default function EditorApplicationPage() {
         <Container size="wide">
           <FormFoundation
             title="Editor application"
-            note="This structure prepares the information KLYP may request later. No application is submitted, reviewed, or stored in this phase."
-            submitLabel="Applications not open"
+            note="These details will form the application when online submissions open. Nothing entered here is submitted, reviewed, or stored."
+            submitLabel="Applications opening soon"
           >
             <FormSection index="01" legend="About you">
               <TextField
